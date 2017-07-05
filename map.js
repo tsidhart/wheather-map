@@ -15,6 +15,13 @@ function london(){
   getLocation(locations[0]);
 }
 
+function myweather(){
+  document.getElementById('listContainer').innerHTML = '';
+  // get user's location from the browser
+  navigator.geolocation.getCurrentPosition(function(position) {
+    getLocation({ lat: position.coords.latitude, lon: position.coords.longitude });
+  });
+}
 
 // API call onload callback function
 function onloadFunc(){
