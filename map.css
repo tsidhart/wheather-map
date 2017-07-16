@@ -1,0 +1,29 @@
+button {
+  padding: 0.5em;
+  font-size: 1.5em;
+  background-color: white; }
+  button:hover {
+    background-color: #f2f2f2; }
+
+#container {
+  height: 30em;
+  /*background: url('seattle.jpg') center no-repeat;*/
+  background-size: contain; }
+
+#listContainer {
+  margin-top: 3em;
+  text-align: center; }
+  #listContainer li {
+    list-style-type: none;
+    font-size: 3em; }
+
+.img-seattle {
+  background: url("seattle.jpg") center no-repeat; }
+
+.img-london {
+  background: url("london.jpg") center no-repeat; }
+
+.img-location {
+  background: url("world.jpg") center no-repeat; }
+
+/*# sourceMappingURL=map.css.map */

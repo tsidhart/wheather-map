@@ -5,17 +5,20 @@ let locations = [
 ]
 
 // this is triggered when user clicks the button, starting place for all the fun stuff!
-function seattle(){
+function seattle() {
+  container.className = 'img-seattle';
   document.getElementById('listContainer').innerHTML = '';
   getLocation(locations[1]);
 }
 
-function london(){
+function london() {
+  container.className = 'img-london';
   document.getElementById('listContainer').innerHTML = '';
   getLocation(locations[0]);
 }
 
 function myweather(){
+  container.className = 'img-location';
   document.getElementById('listContainer').innerHTML = '';
   // get user's location from the browser
   navigator.geolocation.getCurrentPosition(function(position) {

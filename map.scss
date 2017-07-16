@@ -1,0 +1,35 @@
+@import "variables";
+
+button {
+  padding: $button-padding;
+  font-size: $button-size;
+  background-color: $button-color;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+}
+
+
+#container {
+  height: 30em;
+  /*background: url('seattle.jpg') center no-repeat;*/
+  background-size: contain;
+}
+
+
+#listContainer {
+  margin-top: 3em;
+  text-align: center;
+
+  li {
+    list-style-type: none;
+    font-size: 3em;
+  }
+}
+
+@each $city, $img in $cities {
+  .img-#{$city} {
+    background: $img center no-repeat;
+  }
+}
