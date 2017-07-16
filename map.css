@@ -7,23 +7,25 @@ button {
 
 #container {
   height: 30em;
-  /*background: url('seattle.jpg') center no-repeat;*/
   background-size: contain; }
 
 #listContainer {
-  margin-top: 3em;
+  padding-top: 5em;
   text-align: center; }
   #listContainer li {
     list-style-type: none;
     font-size: 3em; }
 
 .img-seattle {
-  background: url("seattle.jpg") center no-repeat; }
+  background: url("seattle.jpg") center no-repeat;
+  color: black; }
 
 .img-london {
-  background: url("london.jpg") center no-repeat; }
+  background: url("london.jpg") center no-repeat;
+  color: black; }
 
 .img-location {
-  background: url("world.jpg") center no-repeat; }
+  background: url("world.jpg") center no-repeat;
+  color: yellow; }
 
 /*# sourceMappingURL=map.css.map */

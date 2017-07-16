@@ -13,13 +13,12 @@ button {
 
 #container {
   height: 30em;
-  /*background: url('seattle.jpg') center no-repeat;*/
   background-size: contain;
 }
 
 
 #listContainer {
-  margin-top: 3em;
+  padding-top: 5em;
   text-align: center;
 
   li {
@@ -31,5 +30,12 @@ button {
 @each $city, $img in $cities {
   .img-#{$city} {
     background: $img center no-repeat;
+
+    @if $city == 'location' {
+      color: yellow;
+    } @else {
+      color: black;
+    }
+
   }
 }
